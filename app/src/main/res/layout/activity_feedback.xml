@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bw.Movie.activity.FeedbackActivity">
+    <include
+        android:layout_height="110px"
+        android:layout_width="match_parent"
+        layout="@layout/return__layout"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32px"
+        android:text="请您的意见：" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/text_context"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20px"
+            android:background="@drawable/bround"
+            android:hint="请您对我们的产品进行评价，为了我们能够更好的完善产品，请您提出宝贵意见"
+            android:paddingTop="60px"
+            android:paddingBottom="200px"
+            android:textSize="32px"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/backbround"
+        android:textSize="32px"
+        android:text="提交"
+        android:textColor="#fff"
+        />
+</LinearLayout>

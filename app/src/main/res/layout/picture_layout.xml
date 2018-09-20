@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/tt_out"
+        layout="@layout/title_out2"/>
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_below="@id/tt_out"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="800px"
+            android:layout_centerHorizontal="true"
+            android:clipToPadding="false"
+            android:layout_marginTop="50px"
+            android:paddingEnd="40px"
+            android:paddingLeft="80px"
+            android:paddingRight="80px"
+            android:paddingStart="40px">
+        </android.support.v4.view.ViewPager>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="20px">
+            <TextView
+                android:id="@+id/hot_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="一九四二"
+                android:textColor="#ffffff"
+                android:textSize="40px" />
+
+            <TextView
+                android:id="@+id/hot_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hot_title"
+                android:layout_marginTop="10px"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="是天灾，还是人祸？"
+                android:textColor="#ffffff"
+                android:textSize="32px" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlv"
+        android:layout_below="@id/tt_out"
+        android:layout_margin="10px"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

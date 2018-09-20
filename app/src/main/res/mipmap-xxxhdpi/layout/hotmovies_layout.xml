@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="700px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10px"
+        android:id="@+id/movies_xrev"></android.support.v7.widget.RecyclerView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movies_xrev"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_above="@id/hot_content"
+            android:id="@+id/hot_title"
+            android:layout_alignParentLeft="true"
+            android:textSize="25px"
+            android:textColor="#ffffff"
+            android:text="一九四二"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_above="@id/hot_content"
+            android:layout_alignParentRight="true"
+            android:textSize="15px"
+            android:textColor="#ffffff"
+            android:text="83加影院上映  54场"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_alignParentLeft="true"
+            android:textSize="20px"
+            android:textColor="#ffffff"
+            android:id="@+id/hot_content"
+            android:text="是天灾，还是人祸？"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

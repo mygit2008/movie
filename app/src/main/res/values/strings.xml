@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">HiYou电影</string>
+    <string name="sethobby">影视爱好</string>
+    <string name="setmessage">修改信息</string>
+    <string name="setpwd">变更密码</string>
+    <string name="setautolagin">自动登录</string>
+    <string name="setchache">清除缓存</string>
+    <string name="setupgrade">软件升级</string>
+    <string name="setfeedback">意见反馈</string>
+    <string name="programcustomization">关于软件</string>
+    <string name="setphone">客服电话：400-800-8800</string>
+    <string name="login_error">登录失败，请重新确认账户密码</string>
+    <string name="settitle">设置标题</string>
+</resources>

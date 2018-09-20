@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10px">
+
+    <TextView
+        android:id="@+id/director_fu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="导演："
+        android:textSize="32px" />
+
+    <TextView
+        android:id="@+id/director"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/director_fu"
+        android:textSize="32px" />
+
+    <TextView
+        android:id="@+id/starring_fu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/director_fu"
+        android:layout_marginTop="20px"
+        android:text="主演："
+        android:textSize="32px" />
+
+    <TextView
+        android:id="@+id/starring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/director"
+        android:layout_marginTop="20px"
+        android:layout_toRightOf="@id/starring_fu"
+        android:textSize="32px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/starring_fu"
+        android:layout_marginTop="50px"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="32px"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30px"
+                android:background="#e2e2e2"
+                android:gravity="center_vertical"
+                android:text="海报和剧照"
+                android:textSize="32px" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <LinearLayout
+                    android:id="@+id/haibao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="32px"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30px"
+                android:background="#e2e2e2"
+                android:gravity="center_vertical"
+                android:text="预告片和片花"
+                android:textSize="32px" />
+
+            <fm.jiecao.jcvideoplayer_lib.JCVideoPlayer
+                android:id="@+id/playerView"
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:layout_gravity="center"
+                android:layout_marginRight="20px"></fm.jiecao.jcvideoplayer_lib.JCVideoPlayer>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

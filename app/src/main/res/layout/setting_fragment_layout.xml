@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/return__layout"
+        android:layout_width="match_parent"
+        android:layout_height="110px" />
+
+    <RelativeLayout
+        android:id="@+id/sethobby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:background="@drawable/bround"
+        android:padding="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32px"
+            android:text="@string/sethobby" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/access_icon" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:background="@drawable/bround"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/setmessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/setmessage"
+                android:textSize="32px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/access_icon" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#ccc" />
+
+        <RelativeLayout
+            android:id="@+id/setpwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32px"
+                android:gravity="center_vertical"
+                android:text="@string/setpwd" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/access_icon" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:background="@drawable/bround"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32px"
+                android:layout_centerVertical="true"
+                android:text="@string/setautolagin" />
+
+            <CheckBox
+                android:id="@+id/che"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/checkboxselecte"
+                android:button="@null" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="#ccc" />
+
+        <RelativeLayout
+            android:id="@+id/setchache"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32px"
+                android:text="@string/setchache" />
+            <TextView
+                android:id="@+id/chace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32px"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40px"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/access_icon" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="#ccc" />
+
+        <RelativeLayout
+            android:id="@+id/setupgrade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32px"
+                android:text="@string/setupgrade" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/access_icon" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:background="@drawable/bround"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/setfeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32px"
+                android:text="@string/setfeedback" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/access_icon" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="#ccc" />
+
+        <RelativeLayout
+            android:id="@+id/programcustomization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32px"
+                android:text="@string/programcustomization" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/access_icon" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#ccc" />
+
+        <RelativeLayout
+            android:id="@+id/setphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32px"
+                android:text="@string/setphone" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/access_icon" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/unenlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退出登录"
+        android:textColor="#fff"
+        android:textSize="40px"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:background="@drawable/btn_brond3" />
+</LinearLayout>

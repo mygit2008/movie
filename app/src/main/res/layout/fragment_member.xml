@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/user_relative"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="350px">
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/user_img"
+                android:layout_marginTop="30px"
+                android:layout_marginBottom="30px"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                fresco:actualImageScaleType="centerCrop"
+                fresco:placeholderImage="@mipmap/hiyou_logo"
+                fresco:placeholderImageScaleType="centerCrop"
+                fresco:roundAsCircle="true"
+                android:layout_width="200px"
+                android:layout_height="200px" />
+
+            <RelativeLayout
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/user_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/user_nickname"
+                    android:textSize="40px"
+                    android:text="请登录"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/user_phone"
+                    android:layout_marginTop="25px"
+                    android:textSize="32px"
+                    android:layout_below="@id/user_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/sex_img"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50px"
+                    android:layout_centerVertical="true"
+                    android:layout_width="50px"
+                    android:layout_height="50px" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/two_linear"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="30px">
+        <LinearLayout
+            android:background="@color/white"
+            android:id="@+id/goupiao"
+            android:layout_weight="1"
+            android:layout_width="0px"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <TextView
+                android:background="@mipmap/goupiaojilv"
+                android:layout_width="70px"
+                android:layout_height="70px" />
+            <TextView
+                android:layout_marginTop="20px"
+                android:text="购票记录"
+                android:textSize="24px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:background="@color/black"
+            android:layout_width="2px"
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="20px"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:id="@+id/qiandao"
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:layout_width="0px"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:background="@mipmap/meiriyiqian"
+                android:layout_width="70px"
+                android:layout_height="70px" />
+            <TextView
+                android:layout_marginTop="20px"
+                android:text="每日一签"
+                android:textSize="24px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:background="@color/white"
+        android:id="@+id/huiyuanzhongxin"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginTop="40px"
+        android:layout_height="100px">
+        <TextView
+            android:layout_marginLeft="50px"
+            android:text="会员中心"
+            android:textSize="30px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:background="@mipmap/access_icon"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50px"
+            android:layout_width="30px"
+            android:layout_height="30px" />
+    </RelativeLayout>
+    <View
+        android:layout_marginLeft="40px"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:id="@+id/attention_movie"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="100px">
+        <TextView
+            android:layout_marginLeft="50px"
+            android:text="关注影片"
+            android:textSize="30px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:background="@mipmap/access_icon"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50px"
+            android:layout_width="30px"
+            android:layout_height="30px" />
+    </RelativeLayout>
+    <View
+        android:layout_marginLeft="40px"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <RelativeLayout
+        android:background="@color/white"
+        android:id="@+id/attention_cinemas"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="100px">
+        <TextView
+            android:layout_marginLeft="50px"
+            android:text="关注影院"
+            android:textSize="30px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:background="@mipmap/access_icon"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50px"
+            android:layout_width="30px"
+            android:layout_height="30px" />
+    </RelativeLayout>
+       <!-- <View
+            android:layout_marginLeft="40px"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+        <RelativeLayout
+            android:background="@color/white"
+            android:id="@+id/"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="100px">
+            <TextView
+                android:layout_marginLeft="50px"
+                android:text="关注影院"
+                android:textSize="30px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:background="@mipmap/access_icon"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50px"
+                android:layout_width="30px"
+                android:layout_height="30px" />
+        </RelativeLayout>-->
+</LinearLayout>
+
+</ScrollView>

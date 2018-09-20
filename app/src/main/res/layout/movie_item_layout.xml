@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:paddingLeft="15px"
+    android:paddingRight="15px"
+    android:id="@+id/rl"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical" android:layout_width="match_parent"
+    android:orientation="horizontal" android:layout_height="match_parent">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_margin="15px"
+        fresco:placeholderImage="@mipmap/hiyou_logo"
+        android:id="@+id/movie_img"
+        android:layout_width="150px"
+        android:layout_height="200px" />
+    <LinearLayout
+        android:layout_toRightOf="@id/movie_img"
+        android:orientation="vertical"
+        android:layout_marginRight="40px"
+        android:layout_width="500px"
+        android:layout_weight="9"
+        android:layout_height="200px">
+        <TextView
+            android:textSize="30px"
+            android:textStyle="bold"
+            android:layout_margin="10px"
+            android:id="@+id/movie_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/movie_content"
+            android:ellipsize="end"
+            android:paddingRight="20px"
+            android:textSize="22px"
+            android:maxLines="3"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/movie_time"
+            android:layout_margin="10px"
+            android:textSize="24px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/access_icon"
+        android:layout_width="30px"
+        android:layout_height="30px" />
+</RelativeLayout>

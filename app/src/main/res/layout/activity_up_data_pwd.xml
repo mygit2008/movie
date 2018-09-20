@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.bw.Movie.activity.UpDataPwdActivity">
+    <include android:layout_width="match_parent"
+        android:layout_height="110px"
+        layout="@layout/return__layout"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bround"
+        android:layout_margin="40px"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20px"
+                android:textSize="32px"
+                android:text="初始密码" />
+
+            <EditText
+                android:id="@+id/setloginpasswors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:textSize="32px" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20px"
+                android:textSize="32px"
+                android:text="重新密码" />
+
+            <EditText
+                android:id="@+id/setloginrelest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:textSize="32px" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20px"
+                android:textSize="32px"
+                android:text="重新输入" />
+
+            <EditText
+                android:id="@+id/setlogincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:textSize="32px" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/uploderbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:background="@drawable/backbround"
+        android:text="修改密码"
+        android:textColor="#fff"
+        android:textSize="32px"
+        android:layout_margin="40px"
+        />
+
+</LinearLayout>

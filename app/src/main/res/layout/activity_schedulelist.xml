@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <RelativeLayout
+        android:id="@+id/biao"
+        android:layout_width="match_parent"
+        android:layout_height="110px">
+
+        <ImageView
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35px"
+            android:src="@mipmap/back"/>
+
+        <TextView
+            android:id="@+id/cinema_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选座"
+            android:textColor="#ffffff"
+            android:textSize="40px" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_below="@+id/biao"
+        android:background="#484754" />
+
+    <LinearLayout
+        android:id="@+id/tis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="10px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:src="@mipmap/seat_sold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已售"
+                android:textColor="#ffffff"
+                android:textSize="24px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:src="@mipmap/seat_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可选"
+                android:textColor="#ffffff"
+                android:textSize="24px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:src="@mipmap/seat_green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已选"
+                android:textColor="#ffffff"
+                android:textSize="24px" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_below="@+id/tis"
+        android:layout_marginTop="10px"
+        android:background="#484754" />
+
+    <com.bw.Movie.widget.SeatTable
+        android:id="@+id/seatView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:id="@+id/piaoMess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pay_btn"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pay_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10px"
+        android:background="#000000"
+        android:text="去支付"
+        android:textColor="#ffffff"
+        android:textSize="32px" />
+</RelativeLayout>

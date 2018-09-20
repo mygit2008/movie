@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="25px"
+    android:layout_marginRight="25px">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新影联·华谊兄弟影院"
+        android:textColor="#797979"
+        android:textSize="32px" />
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="20px"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="广顾北大街16号望京华彩商业中心B1100102"
+            android:textColor="#848484"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="24px" />
+
+        <ImageView
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@+id/address"
+            android:src="@mipmap/location_img" />
+
+        <ImageView
+            android:layout_width="35px"
+            android:layout_height="35px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/right_img" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl"
+        android:layout_marginTop="15px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_marginLeft="5px"
+            android:background="#FE9A00"
+            android:src="@mipmap/coffee" />
+
+        <ImageView
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_marginLeft="5px"
+            android:background="#FE9A00"
+            android:src="@mipmap/car" />
+
+        <ImageView
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_marginLeft="5px"
+            android:background="#FE9A00"
+            android:src="@mipmap/sand" />
+
+        <ImageView
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_marginLeft="5px"
+            android:background="#FE9A00"
+            android:src="@mipmap/max" />
+
+        <ImageView
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_marginLeft="5px"
+            android:background="#FE9A00"
+            android:src="@mipmap/vipbox" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:layout_marginTop="20px"
+        android:background="@drawable/text_shape"
+        android:paddingBottom="10px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:paddingTop="10px"
+        android:text="订票热线:57620488"
+        android:textColor="#842913"
+        android:textSize="32px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:layout_toRightOf="@+id/tel"
+        android:background="@drawable/text_shape2"
+        android:paddingBottom="10px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:paddingTop="10px"
+        android:text="关注影院"
+        android:textSize="32px" />
+</RelativeLayout>

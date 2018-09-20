@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="30dp"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/open_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_brond"
+       android:layout_margin="15dp"
+        android:text="去往相册" />
+
+    <Button
+        android:layout_margin="15dp"
+        android:id="@+id/open_photo_album"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_brond3"
+        android:text="相机拍照"
+        android:textColor="#000" />
+
+    <Button
+        android:layout_margin="15dp"
+        android:id="@+id/cancelselect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bround"
+        android:text="取消" />
+</LinearLayout>

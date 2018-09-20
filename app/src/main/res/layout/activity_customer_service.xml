@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/customerserviceActivity_layout"
+    tools:context="com.bw.Movie.activity.CustomerServiceActivity">
+    <include
+        android:layout_height="80px"
+        android:layout_width="match_parent"
+        layout="@layout/return__layout"
+        />
+    <EditText
+        android:id="@+id/userid"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:hint="输入聊天id" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/custommassge"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="7" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="2"
+        android:background="@drawable/btn_brond2"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/input_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="230px"
+            android:padding="30px"
+            android:layout_weight="7" />
+
+        <Button
+            android:id="@+id/sendmassge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/backbround"
+            android:text="发送" />
+    </RelativeLayout>
+</LinearLayout>

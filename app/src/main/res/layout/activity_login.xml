@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_background"
+    tools:context="com.bw.Movie.activity.LoginActivity">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/circleImageView"
+        android:layout_width="180px"
+        android:layout_height="180px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180px"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:placeholderImage="@mipmap/hiyou_logo"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:roundedCornerRadius="30px" />
+
+    <LinearLayout
+        android:id="@+id/login_user_account_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/circleImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="40px"
+        android:background="@drawable/border"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15px">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="70px"
+            android:src="@mipmap/login_user_img" />
+
+        <EditText
+            android:id="@+id/login_user_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:background="@null"
+            android:hint="Username"
+            android:phoneNumber="true"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:textSize="40px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_user_password_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_user_account_linear"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="40px"
+        android:background="@drawable/border"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15px">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="70px"
+            android:src="@mipmap/login_user_password" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/login_user_password"
+                android:layout_width="match_parent"
+                android:layout_height="70px"
+                android:layout_marginLeft="20px"
+                android:background="@null"
+                android:hint="Password"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:textSize="40px" />
+            <ImageView
+                android:id="@+id/pwd_eye"
+                android:src="@mipmap/eye_close"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="20px"
+                android:layout_alignParentRight="true"
+                android:layout_width="50px"
+                android:layout_height="50px" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/login_user_btn"
+        android:layout_width="150px"
+        android:layout_height="60px"
+        android:layout_below="@+id/login_user_password_linear"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/login_btn"
+        android:gravity="center"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/member_go_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_user_btn"
+        android:layout_marginTop="60px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="没有账号?"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/go_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="去注册"
+            android:textColor="@color/btn_blue"
+            android:textSize="32px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/huo_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/member_go_register"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="100px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            android:background="@color/black" />
+
+        <TextView
+            android:textSize="32px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="或" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            android:background="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/huo_linear"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/wechat_login"
+            android:src="@mipmap/umeng_socialize_wechat"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="100px" />
+        <ImageView
+            android:id="@+id/qq_login"
+            android:src="@mipmap/umeng_socialize_qq"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="100px" />
+    </LinearLayout>
+
+</RelativeLayout>
+
+

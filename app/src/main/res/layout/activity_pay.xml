@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bw.Movie.activity.PayActivity">
+
+    <RelativeLayout
+        android:id="@+id/biao"
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:background="#01C7B4">
+
+        <ImageView
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="支付"
+            android:textColor="#ffffff"
+            android:textSize="40px" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/biao"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/wxzhifu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="微信支付"
+            android:textSize="32px" />
+
+        <RadioButton
+            android:id="@+id/zfbzhifu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="支付宝支付"
+            android:textSize="32px" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/confirmPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rg"
+        android:text="确认支付" />
+</RelativeLayout>

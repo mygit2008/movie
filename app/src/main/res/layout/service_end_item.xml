@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+   <ImageView
+       android:layout_width="90px"
+       android:layout_height="90px"
+       android:src="@mipmap/ic_launcher"
+       />
+    <TextView
+        android:id="@+id/service_meassage_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100px"
+        android:text="我是客户"
+        android:layout_marginTop="20px"
+        />
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="8px"
+    android:orientation="horizontal"
+    android:id="@+id/ll"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="0px"
+        android:layout_height="200px"
+        android:id="@+id/movies2_picture"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_marginRight="20px"
+        android:layout_marginLeft="20px"
+        android:orientation="vertical"
+        android:layout_weight="5"
+        android:layout_width="0px"
+        android:layout_height="200px">
+        <TextView
+            android:layout_marginTop="10px"
+            android:text="标题"
+            android:id="@+id/movies2_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="32px"/>
+        <TextView
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_marginTop="10px"
+            android:text="标题"
+            android:id="@+id/movies2_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24px"/>
+    </LinearLayout>
+
+</LinearLayout>

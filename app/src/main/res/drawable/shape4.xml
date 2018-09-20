@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--设置背景色-->
+    <solid android:color="#01C7B4" />
+    <!--设置圆角-->
+    <!--<corners-->
+    <corners android:radius="30dip" />
+        <!---->
+        <!--android:bottomRightRadius="105dip"-->
+        <!--android:topRightRadius="105dip"-->
+        <!--/>-->
+    <!--<padding-->
+    <!--android:bottom="10dp"-->
+    <!--android:left="10dp"-->
+    <!--android:right="10dp"-->
+    <!--android:top="10dp"-->
+    <!--/>-->
+    <!--设置边框线的宽度和颜色-->
+    <!--<stroke android:width="2px" android:color="#999999" />-->
+</shape>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bw.Movie.activity.AttentionCinemasActivity">
+    <RelativeLayout
+        android:id="@+id/attention_cinemas_head"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="100px">
+        <TextView
+            android:text="已关注影院"
+            android:textSize="40px"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/attention_cinemas_back"
+            android:layout_centerVertical="true"
+            android:layout_width="150px"
+            android:src="@mipmap/left"
+            android:padding="20px"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="40px"
+        android:layout_below="@+id/attention_cinemas_head"
+        android:visibility="gone"
+        android:id="@+id/attention_cinemas_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:id="@+id/none_guanzhu_cinemas_relate"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/none_guanzhu_cinemas"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/none_guanzhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@id/none_guanzhu_cinemas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100px"
+        android:text="还没有关注的影院呢~"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.bw.Movie.activity.MyAdressActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#25CB73"
+        android:gravity="center_vertical"
+        android:layout_height="80px">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50px"
+            android:src="@mipmap/back"
+            android:layout_marginTop="15px"
+            android:layout_marginLeft="20px"
+            android:layout_height="50px" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/back"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="200px"
+            android:text="城市选择"
+            android:textColor="#fff"
+            android:textSize="40px"
+            />
+
+    </RelativeLayout>
+
+    <com.bw.Movie.adress.ClearEditText
+        android:id="@+id/filter_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:background="#bef9b81b"
+        android:drawableLeft="@drawable/search_bar_icon_normal"
+        android:hint="请输入关键字"
+        android:maxLines="1"
+        android:textSize="15dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="当前定位信息"
+        />
+    <TextView
+        android:id="@+id/ding_tv"
+        android:layout_marginLeft="10dp"
+        android:textSize="32px"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <com.xp.wavesidebar.WaveSideBar
+            android:id="@+id/sideBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:chooseTextColor="@android:color/white"
+            app:textColor="#969696"
+            app:backgroundColor="#bef9b81b"
+            app:textSize="10sp"
+            app:hintTextSize="32sp"
+            app:radius="20dp"
+            app:circleRadius="24dp"/>
+
+    </FrameLayout>
+</LinearLayout>

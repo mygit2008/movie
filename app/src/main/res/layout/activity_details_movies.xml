@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:orientation="vertical"
+    tools:context="com.bw.Movie.activity.DetailsMoviesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:background="#01C7B4">
+
+        <ImageView
+            android:layout_width="0px"
+            android:layout_height="30px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30px"
+            android:layout_weight="1"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="影片详情"
+            android:textColor="#ffffff"
+            android:textSize="40px" />
+
+        <Button
+            android:id="@+id/details_paiqi"
+            android:layout_width="0px"
+            android:layout_height="50px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="30px"
+            android:layout_weight="2"
+            android:background="@drawable/shape2"
+            android:gravity="center"
+            android:text="电影排期"
+            android:textColor="#ffffff"
+            android:textSize="24px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EBEBEB"
+        android:orientation="vertical">
+
+        <include layout="@layout/movies_byid_layout" />
+
+        <include layout="@layout/movies_xiangxi_layout" />
+
+        <TextView
+            android:id="@+id/details_dianping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20px"
+            android:gravity="center_horizontal"
+            android:text="查看全部的精彩评论"
+            android:textSize="32px" />
+    </LinearLayout>
+</LinearLayout>

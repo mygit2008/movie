@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    android:padding="8px"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="0px"
+        android:layout_height="200px"
+        android:id="@+id/movies2_picture"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_marginLeft="5px"
+        android:orientation="vertical"
+        android:layout_weight="5"
+        android:layout_width="0px"
+        android:layout_height="200px">
+        <TextView
+            android:text="标题"
+            android:id="@+id/movies2_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25px"/>
+        <TextView
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_marginTop="5px"
+            android:text="标题"
+            android:id="@+id/movies2_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18px"/>
+    </LinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

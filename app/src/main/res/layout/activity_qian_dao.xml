@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bw.Movie.activity.QianDaoActivity">
+    <RelativeLayout
+        android:id="@+id/gpjl_head"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="100px">
+        <ImageView
+            android:id="@+id/gpjl_back"
+            android:layout_centerVertical="true"
+            android:layout_width="150px"
+            android:src="@mipmap/left"
+            android:padding="20px"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="每日一签"
+            android:textSize="40px"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <com.bw.Movie.widget.SignCalendar
+        android:padding="20px"
+        android:id="@+id/sc_main"
+        android:layout_marginTop="40px"
+        android:layout_width="match_parent"
+        android:layout_height="700px"
+        android:clickable="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_sign"
+            android:layout_margin="30px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f00"
+            android:text="签到"
+            android:textColor="#fff" />
+    </LinearLayout>
+</LinearLayout>

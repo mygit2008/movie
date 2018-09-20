@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#f0f0f0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bw.Movie.activity.CommentActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_margin="20px"
+        android:id="@+id/comment_recy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ssa">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/ssa"
+        android:background="#f0f0f0"
+        android:layout_marginRight="20px"
+        android:layout_marginLeft="20px"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:background="#ffffff"
+            android:id="@+id/comment_shuru"
+            android:hint="请输入评论"
+            android:layout_weight="3"
+            android:textSize="24px"
+            android:layout_width="0px"
+            android:layout_height="40px" />
+        <Button
+            android:id="@+id/comment_pinglun"
+            android:text="发表评论"
+            android:textSize="24px"
+            android:layout_weight="1"
+            android:layout_width="0px"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>
